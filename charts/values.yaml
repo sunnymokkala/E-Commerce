@@ -1,0 +1,18 @@
+namespace: ecommerce-ns 
+
+replicas: 5
+
+appDeployment:
+ labels:
+  app: ecommerce
+ name: ecommerce-conatiner
+
+image:
+ repository: sunnymokkala/e-commerce-app
+ tag: v3.0.0
+port: 80
+
+appService:
+ app: ecommerce
+ port: 80
+ type: LoadBalancer
