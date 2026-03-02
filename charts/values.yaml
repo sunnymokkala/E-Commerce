@@ -1,6 +1,6 @@
 namespace: akash-ns 
 
-replicas: 5
+replicas: 6
 
 appDeployment:
  labels:
