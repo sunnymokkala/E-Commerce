@@ -1,45 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ShopEase</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase – E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header>
-        <h1>ShopEase</h1>
-        <input type="text" placeholder="Search products...">
-    </header>
+  <header>
+    <h1>ShopEase</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Categories</a>
+      <a href="#">Cart</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-    <section class="products">
+  <section class="hero">
+    <h2>Shop Smart, Live Better</h2>
+    <p>Discover amazing products at unbeatable prices</p>
+    <button onclick="startShopping()">Start Shopping</button>
+  </section>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150">
-            <h3>Wireless Headphones</h3>
-            <p>$59.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
+  <section class="container">
+    <h3>Featured Products</h3>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" />
+        <div class="card-content">
+          <h4>Laptop</h4>
+          <p>High performance laptop for work & play</p>
+          <div class="price">₹65,000</div>
+          <button onclick="addToCart('Laptop')">Add to Cart</button>
         </div>
+      </div>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150">
-            <h3>Smart Watch</h3>
-            <p>$89.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" />
+        <div class="card-content">
+          <h4>Smartphone</h4>
+          <p>Latest generation smartphone</p>
+          <div class="price">₹32,000</div>
+          <button onclick="addToCart('Smartphone')">Add to Cart</button>
         </div>
+      </div>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150">
-            <h3>Gaming Mouse</h3>
-            <p>$29.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552231693" />
+        <div class="card-content">
+          <h4>Headphones</h4>
+          <p>Noise cancelling wireless headphones</p>
+          <div class="price">₹4,500</div>
+          <button onclick="addToCart('Headphones')">Add to Cart</button>
         </div>
+      </div>
 
-    </section>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" />
+        <div class="card-content">
+          <h4>Smart Watch</h4>
+          <p>Track fitness and notifications</p>
+          <div class="price">₹7,999</div>
+          <button onclick="addToCart('Smart Watch')">Add to Cart</button>
+        </div>
+      </div>
 
-    <footer>
-        <p>© 2026 ShopEase | Secure Online Shopping</p>
-    </footer>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    © 2026 ShopEase E-Commerce | Happy Shopping!
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
