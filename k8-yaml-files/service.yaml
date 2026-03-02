@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: veg-service
+  name: ecommerce-service
   namespace: akash-ns
 spec:
-  type: LoadBalancer
   selector:
-    app: veg
+    app: ecommerce
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 3000
+      targetPort: 80
+  type: LoadBalancer

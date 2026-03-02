@@ -1,4 +1,4 @@
-namespace: ecommerce-ns 
+namespace: akash-ns 
 
 replicas: 5
 
