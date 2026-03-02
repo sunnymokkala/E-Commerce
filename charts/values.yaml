@@ -1,6 +1,6 @@
 namespace: akash-ns 
 
-replicas: 6
+replicas: 5
 
 appDeployment:
  labels:
@@ -8,8 +8,8 @@ appDeployment:
  name: ecommerce-conatiner
 
 image:
- repository: sunnymokkala/e-commerce-app
- tag: v3.0.0
+ repository: vasist/e-commerce-app
+ tag: v1.0.0
 port: 80
 
 appService:
